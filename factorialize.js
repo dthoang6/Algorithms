@@ -11,4 +11,18 @@ function factorialize(num) {
     }
   }
   
+  //good solution
+  function factorialize1(num) {
+    for (var product = 1; num > 0; num--) {
+      product *= num;
+    }
+    return product;
+  }
+  //using recursion
+  function factorialize2(num) {
+    if (num === 0) {
+      return 1;
+    }
+    return num * factorialize2(num - 1);
+  }
   factorialize(5);
