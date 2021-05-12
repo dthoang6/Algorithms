@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {*} arr 
+ * @param {*} func 
+ * @returns the first elements in the array that passes a function test
+ */
 function findElement(arr, func) {
     let num = 0;
   
@@ -10,3 +16,5 @@ function findElement(arr, func) {
   
     return undefined;
   }
+
+  findElement([1, 2, 3, 4], num => num%2 === 0);
