@@ -1,4 +1,5 @@
 //Instantiation in ES6 vs Classical Inheritance with prototype
+/**When you want to make a copy of an object and reuse the code */
 class Player {
   constructor(name, type) {
     this.name = name;
