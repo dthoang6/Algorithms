@@ -16,7 +16,7 @@ class MyArray {
     const lastItem = this.data[this.length - 1];
     delete this.data[this.length - 1];
     this.length--;
-    return pop;
+    return lastItem;
   }
 }
 
