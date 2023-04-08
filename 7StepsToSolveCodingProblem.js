@@ -1,4 +1,5 @@
 /**
+ * example problem:
  * merge two sorted array
  * array1 [0, 3, 4, 31]
  * array2 [4, 6, 30]
@@ -18,10 +19,10 @@
  * how to get started if stuck?
  *  - try 4 approaches: DIY, Simplify and Generalize, Base Case to Build, Data Structure Brainstorm.
  *
- *  - try: write a sample input on the whiteboard and turn it into the correct output by hand.
+ *  - try DIY: write a sample input on the whiteboard and turn it into the correct output by hand.
  *  - look for patterns, process I use, and think about how to implement my process in code.
  *  -
- *  - try: solve a simpler version of problem
+ *  - try Simplify and Generalize: solve a simpler version of problem
  *  - remove or simplify one of the requirements of the problem
  *  - once i have a solution, see if i can adapt that approach for the original question
  *  - for example: trying to find k-largest element in a set? I can walk though finding the largest element, then the second largest, then the third largest. Generalizing from there to find the k-largest.
@@ -52,7 +53,7 @@
  *  - solve it manually on an example and reverse engineer your thought process.
  *  - solve it incorrectly and then think about why the algorithm fails
  *  - make a time and space tradeoff with hash table
- *  - throw some data structure a the problem
+ *  - throw some data structure at the problem
  *      - can you save time by using the fast lookups of a hash table?
  *      - can you express the relationship between data points as a graph?
  *      - look at the requirements of the problem and ask yourself if there's a data structure that has those properties.
@@ -88,33 +89,3 @@
  *
  * - when you find bugs, fix them carefully!
  */
-function mergeSortedArray(array1, array2) {
-  const mergeArray = []
-
-  let array1Item = array1[0]
-  let array2Item = array2[0]
-  let i = 1
-  let j = 1
-  //check input
-  if (array1.length === 0) {
-    return array2
-  }
-  if (array2.length === 0) {
-    return array1
-  }
-  while (array1Item || array2Item) {
-    if (!array1Item || array1Item < array2Item) {
-      //check if item of value is at the end of array
-      mergeArray.push(array1Item)
-      array1Item = array1[i]
-      i++
-    } else {
-      mergeArray.push(array2Item)
-      array2Item = array2[j]
-      j++
-    }
-  }
-  return mergeArray
-}
-
-mergeSortedArray([0, 3, 4, 31], [4, 6, 30])
