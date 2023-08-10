@@ -1,21 +1,19 @@
 /**
- * example problem:
- * merge two sorted array
- * array1 [0, 3, 4, 31]
- * array2 [4, 6, 30]
- *
  * 1. LISTEN: info: the input is two sorted array of number
  * ask question to clarify the inputs and output
  * what are the inputs?
  * what is the output?
+ * what are the constrains of the input, output?
  * do not ignore information given, info is there for a reason.
  * COMMUNICATE WITH YOUR INTERVIEWER THROUGH OUT
  *
  * 2. EXAMPLE: array1 [0, 3, 4, 31] array2 [4, 6 ,30]  return [ 0, 3, 4, 4, 6, 30, 31]
  * is there any way it's a special case?
  * is it big enough?
+ * write out example of input and out put for TEST CASES
  * do not try to solve problem in your head, use an example
  *
+ * understand the problem by understand the input, out put, try to put problem into formula, relationship between data to formula
  * how to get started if stuck?
  *  - try 4 approaches: DIY, Simplify and Generalize, Base Case to Build, Data Structure Brainstorm.
  *

@@ -4,7 +4,7 @@
 - array is good with sorting
 - string problem is array problem: we can convert string to an array
     - string is simply an array of character
-    - when you get a question live reverse a string, what you should do is convert string to array of character by: doing some loop on it or using split method in JS and returning it as a string
+    - when you get a question like reverse a string, what you should do is convert string to array of character by: doing some loop on it or using split method in JS and returning it as a string
 - pros: fast lookups, fast push and pop, ordered
 - cons: slow inserts, slow deletes, fixed size for static array
 */
